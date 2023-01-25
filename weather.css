@@ -1,0 +1,80 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+  font-family: 'montserrat', "sans-serif";
+  background-image: url('weather.jpg');
+  background-position: top;
+  background-size: cover;
+
+}
+
+.app-wrap{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+ border: none;
+ outline: none;
+ background-color: rgba(0,0,0,0.3);
+ border-radius: 15px;
+
+ color: #313131;
+ font-size: 20px;
+ font-weight: 400;
+ transition: 0.2s ease-in;
+}
+header input:focus {
+  background-color: white;
+}
+
+main{
+color: #fff;
+padding: 25px 40px 50px;
+flex: 1 1 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+}
+.location .city{
+color: #fff;
+  margin-bottom:  5px;
+  font-size: 32px;
+}
+.location .date{
+
+  font-size: 16px;
+}
+.current .temp{
+  color: #ffff;
+  font-size: 80px;
+
+}
+
+.current .weather{
+
+}
+.current .hi-low{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500px;
+  padding-top: 10px;
+
+}
